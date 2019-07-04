@@ -17,7 +17,9 @@
     "webdriver:stop": "webdriver-manager shutdown",
     "build-angular-for-prod": "node --max_old_space_size=6096 node_modules/@angular/cli/bin/ng build --prod --aot --build-optimizer --vendor-chunk --verbose --base-href=/ ",
     "build-angular-for-integ": "node --max_old_space_size=6096 node_modules/@angular/cli/bin/ng build --verbose --base-href=/ ",
-    "fix-memory-limit": "cross-env LIMIT=6096 increase-memory-limit"
+    "fix-memory-limit": "cross-env LIMIT=6096 increase-memory-limit",
+    "snyk-protect": "snyk protect",
+    "prepare": "npm run snyk-protect"
   },
   "husky": {
     "hooks": {
@@ -52,7 +54,8 @@
     "node-sass": "^4.9.3",
     "rxjs": "^6.0.0",
     "web-animations-js": "^2.3.1",
-    "zone.js": "^0.8.26"
+    "zone.js": "^0.8.26",
+    "snyk": "^1.189.0"
   },
   "devDependencies": {
     "@angular-devkit/build-angular": "~0.6.3",
@@ -90,5 +93,6 @@
     "ts-node": "^6.0.5",
     "tslint": "~5.9.1",
     "typescript": "2.9.2"
-  }
+  },
+  "snyk": true
 }
