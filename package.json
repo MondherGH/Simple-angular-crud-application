@@ -49,7 +49,7 @@
     "moment": "^2.22.2",
     "mydatepicker": "^2.6.3",
     "ngx-page-scroll": "^5.0.0",
-    "node-sass": "^4.9.3",
+    "node-sass": "^4.14.1",
     "rxjs": "^6.0.0",
     "web-animations-js": "^2.3.1",
     "zone.js": "^0.8.26"
